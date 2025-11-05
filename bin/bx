@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/bx'
+
+# CLI will be implemented in foundational/user story phases
+# For now, just verify the module loads
+if __FILE__ == $0
+  puts "bx v#{BX.version}"
+  puts "Usage: bx <command> [options]"
+  puts ""
+  puts "Commands:"
+  puts "  init       Initialize a new box"
+  puts "  start      Start a box"
+  puts "  stop       Stop a box"
+  puts "  status     Show box status"
+  puts "  tree       Show box hierarchy"
+  puts ""
+  puts "Run 'bx <command> --help' for more information"
+end
